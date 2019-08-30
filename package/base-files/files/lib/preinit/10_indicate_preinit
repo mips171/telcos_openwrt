@@ -113,7 +113,7 @@ preinit_ip() {
 		preinit_config_board
 	fi
 
-	preinit_net_echo "Doing OpenWrt Preinit\n"
+	preinit_net_echo "Doing TelcOS Preinit\n"
 }
 
 preinit_ip_deconfig() {
@@ -148,6 +148,7 @@ preinit_net_echo() {
 }
 
 pi_indicate_preinit() {
+	echo "- Booting TelcOS Melaleuca -"
 	set_state preinit
 }
 

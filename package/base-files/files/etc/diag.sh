@@ -36,11 +36,12 @@ set_led_state() {
 		status_led_blink_preinit_regular
 		;;
 	done)
-		status_led_off
-		[ -n "$running" ] && {
-			status_led="$running"
-			status_led_on
-		}
+		led_off tel-t1:blue:signal3
+		led_off tel-t1:blue:signal2
+		led_off tel-t1:blue:signal1
+		led_off tel-t1:blue:wan
+		led_off tel-t1:blue:lan
+		led_off tel-t1:blue:wlan
 		;;
 	esac
 }
