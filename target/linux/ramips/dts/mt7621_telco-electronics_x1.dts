@@ -164,3 +164,11 @@
 		};
 	};
 };
+
+&sdhci {
+	status = "okay";
+};
+
+&xhci {
+	status = "okay";
+};
