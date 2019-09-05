@@ -957,6 +957,16 @@ endef
 TARGET_DEVICES += telco_electronics_tel-t1
 >>>>>>> ath79: add support for Telco Electronics T1
 
+define Device/telco_electronics_tel-b5
+  ATH_SOC := qca9533
+  DEVICE_VENDOR := Telco Electronics
+  DEVICE_MODEL := TEL-B5
+  DEVICE_VARIANT := AP
+  DEVICE_PACKAGES := rssileds kmod-leds-gpio -swconfig -uboot-envtools
+  IMAGE_SIZE := 16192k
+endef
+TARGET_DEVICES += telco_electronics_tel-b5
+
 define Device/trendnet_tew-823dru
   ATH_SOC := qca9558
   DEVICE_VENDOR := Trendnet
