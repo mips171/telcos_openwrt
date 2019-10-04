@@ -952,7 +952,7 @@ define Device/telco_electronics_tel-t1
   DEVICE_PACKAGES := rssileds kmod-leds-gpio kmod-usb-core kmod-usb2 kmod-usb-net \
 	modemmanager -swconfig -uboot-envtools
   IMAGE_SIZE := 16192k
-  SUPPORTED_DEVICES += tel_t1 telco_electronics_tel-t1 telco_electronics,tel-t1 telco,electronics,tel-t1
+  SUPPORTED_DEVICES += tel-t1 tel_t1 telco_electronics_tel-t1 telco_electronics,tel-t1 telco,electronics,tel-t1
 endef
 TARGET_DEVICES += telco_electronics_tel-t1
 >>>>>>> ath79: add support for Telco Electronics T1
