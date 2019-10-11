@@ -142,7 +142,8 @@ pcs,cr3000)
 qihoo,c301)
 	ucidef_set_led_wlan "wlan" "WLAN" "$boardname:green:wlan" "phy0tpt"
 	;;
-telco_electronics,tel-t1)
+telco_electronics,tel-t1|\
+telco_electronics,tel-t2)
 	ucidef_set_led_switch "lan" "LAN" "$boardname:blue:lan" "switch0" "0x02"
 	ucidef_set_led_netdev "wan" "WAN" "$boardname:blue:wan" "eth0"
 	;;

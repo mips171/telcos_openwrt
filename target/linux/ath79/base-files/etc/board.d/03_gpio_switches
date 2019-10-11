@@ -38,7 +38,8 @@ dlink,dir-835-a1)
 librerouter,librerouter-v1)
 	ucidef_add_gpio_switch "poe_passthrough" "PoE Passthrough" "1" "0"
 	;;
-telco_electronics,tel-t1)
+telco_electronics,tel-t1|\
+telco_electronics,tel-t2)
 	ucidef_add_gpio_switch "lte_power" "LTE Power" "14" "1"
 	ucidef_add_gpio_switch "lte_wakeup" "LTE Wakeup" "11" "1"
 	ucidef_add_gpio_switch "lte_poweroff" "LTE Poweroff" "1" "1"

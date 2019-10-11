@@ -957,6 +957,16 @@ endef
 TARGET_DEVICES += telco_electronics_tel-t1
 >>>>>>> ath79: add support for Telco Electronics T1
 
+define Device/telco_electronics_tel-t2
+  ATH_SOC := qca9531
+  DEVICE_TITLE := Telco Electronics T2
+  DEVICE_PACKAGES := rssileds kmod-leds-gpio kmod-usb-core kmod-usb2 kmod-usb-net \
+	modemmanager -swconfig -uboot-envtools
+  IMAGE_SIZE := 16192k
+  SUPPORTED_DEVICES += tel-t2 tel_t2 telco_electronics_tel-t2 telco_electronics,tel-t2 telco,electronics,tel-t2
+endef
+TARGET_DEVICES += telco_electronics_tel-t2
+
 define Device/telco_electronics_tel-b5
   ATH_SOC := qca9533
   DEVICE_VENDOR := Telco Electronics
