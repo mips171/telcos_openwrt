@@ -75,9 +75,20 @@ case "$FIRMWARE" in
 	openmesh,a42 |\
 	openmesh,a62 |\
 	qxwlan,e2600ac-c1 |\
+<<<<<<< HEAD
 	qxwlan,e2600ac-c2 |\
 	unielec,u4019-32m)
 		caldata_extract "0:ART" 0x1000 0x2f20
+=======
+<<<<<<< HEAD
+	qxwlan,e2600ac-c2)
+		ath10kcal_extract "0:ART" 0x1000 0x2f20
+=======
+	qxwlan,e2600ac-c2 |\
+	unielec,u4019-32m)
+		caldata_extract "0:ART" 0x1000 0x2f20
+>>>>>>> 6f6c00cfc9... ipq40xx: Add support for Unielec U4019
+>>>>>>> ipq40xx: Add support for Unielec U4019
 		;;
 	engenius,ens620ext)
 		caldata_extract "ART" 0x1000 0x2f20
@@ -138,9 +149,20 @@ case "$FIRMWARE" in
 	openmesh,a42 |\
 	openmesh,a62 |\
 	qxwlan,e2600ac-c1 |\
+<<<<<<< HEAD
 	qxwlan,e2600ac-c2 |\
 	unielec,u4019-32m)
 		caldata_extract "0:ART" 0x5000 0x2f20
+=======
+<<<<<<< HEAD
+	qxwlan,e2600ac-c2)
+		ath10kcal_extract "0:ART" 0x5000 0x2f20
+=======
+	qxwlan,e2600ac-c2 |
+	unielec,u4019-32m)
+		caldata_extract "0:ART" 0x5000 0x2f20
+>>>>>>> 6f6c00cfc9... ipq40xx: Add support for Unielec U4019
+>>>>>>> ipq40xx: Add support for Unielec U4019
 		;;
 	engenius,ens620ext)
 		caldata_extract "ART" 0x5000 0x2f20
