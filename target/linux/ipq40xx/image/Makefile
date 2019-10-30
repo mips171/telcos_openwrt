@@ -427,6 +427,19 @@ define Device/unielec_u4019-32m
 endef
 TARGET_DEVICES += unielec_u4019-32m
 
+define Device/telco_x1-pro
+	$(call Device/FitImage)
+	DEVICE_VENDOR := Telco Electronics
+	DEVICE_MODEL := X1 Pro
+	BOARD_NAME := x1-pro
+	DEVICE_DTS := qcom-ipq4019-telco-x1-pro
+	KERNEL_SIZE := 4096k
+	IMAGE_SIZE := 31232k
+	IMAGES := sysupgrade.bin
+	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
+endef
+TARGET_DEVICES += telco_x1-pro
+
 define Device/zyxel_nbg6617
 	$(call Device/FitImageLzma)
 	DEVICE_VENDOR := ZyXEL

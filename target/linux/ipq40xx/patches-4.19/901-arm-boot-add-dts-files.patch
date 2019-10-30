@@ -27,6 +27,7 @@ index b5bd3de87..5a52a0b19 100644
 +	qcom-ipq4018-jalapeno.dtb \
 +	qcom-ipq4018-nbg6617.dtb \
 +	qcom-ipq4018-rt-ac58u.dtb \
++	qcom-ipq4019-telco-x1-pro.dtb \
 +	qcom-ipq4018-wre6606.dtb \
  	qcom-ipq4019-ap.dk01.1-c1.dtb \
  	qcom-ipq4019-ap.dk04.1-c1.dtb \
@@ -47,5 +48,6 @@ index b5bd3de87..5a52a0b19 100644
  	qcom-ipq8064-ap148.dtb \
  	qcom-msm8660-surf.dtb \
  	qcom-msm8960-cdp.dtb \
+
 --
 2.20.1
