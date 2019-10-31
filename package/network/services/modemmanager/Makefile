@@ -8,19 +8,19 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=modemmanager
-PKG_VERSION:=1.10.5
+PKG_VERSION:=1.10.6
 PKG_RELEASE:=1
 
-#PKG_SOURCE:=ModemManager-$(PKG_VERSION).tar.xz
-#PKG_SOURCE_URL:=https://www.freedesktop.org/software/ModemManager
-#PKG_HASH=fa556bb4ba1f1478e709b71151b4de8f7d136d80e51c64e887fc1fd8926cdc70
-#PKG_BUILD_DIR:=$(BUILD_DIR)/ModemManager-$(PKG_VERSION)
+PKG_SOURCE:=ModemManager-$(PKG_VERSION).tar.xz
+PKG_SOURCE_URL:=https://www.freedesktop.org/software/ModemManager
+PKG_HASH=3c2ca73782215664141042422759899ca9846440fc26d6223c7cf7ea4dd3c996
+PKG_BUILD_DIR:=$(BUILD_DIR)/ModemManager-$(PKG_VERSION)
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://anongit.freedesktop.org/git/ModemManager/ModemManager.git
-PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=b0ec3030a3e5519d75c2268fa20062edd2dacf4e
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
+#PKG_SOURCE_PROTO:=git
+#PKG_SOURCE_URL:=https://anongit.freedesktop.org/git/ModemManager/ModemManager.git
+#PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
+#PKG_SOURCE_VERSION:=b0ec3030a3e5519d75c2268fa20062edd2dacf4e
+#PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 PKG_MAINTAINER:=Nicholas Smith <nicholas.smith@telcoantennas.com.au>
 PKG_LICENSE:=GPL-2.0-or-later
