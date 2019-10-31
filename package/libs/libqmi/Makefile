@@ -8,18 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libqmi
-PKG_VERSION:=1.23.2
+PKG_VERSION:=1.24.0
 PKG_RELEASE:=1
 
-#PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
-#PKG_SOURCE_URL:=https://www.freedesktop.org/software/libqmi
-#PKG_HASH=9056e8ab6e26af014d5bd1b29cc439f6bdb46994e0bd5e80f28947ae6f38a414
-
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=git://anongit.freedesktop.org/libqmi
-PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=58514e73df06c9eb9052ce5a67ca9ede7cece135
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
+PKG_SOURCE_URL:=https://www.freedesktop.org/software/libqmi
+PKG_HASH=aeb69f90c273467cce246176cba0967c6413f1995a976992770a597c4fe28c79
 
 PKG_MAINTAINER:=Nicholas Smith <nicholas.smith@telcoantennas.com.au>
 PKG_LICENSE:=GPL-2.0-or-later
