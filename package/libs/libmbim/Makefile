@@ -8,18 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libmbim
-PKG_VERSION:=1.18.3
+PKG_VERSION:=1.20.0
 PKG_RELEASE:=1
 
-#PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
-#PKG_SOURCE_URL:=https://www.freedesktop.org/software/libmbim
-#PKG_HASH=7723f2ca2286c5286ffba7331cb4520099982e55355a7af6f45bdce6b5d39268
-
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=git://anongit.freedesktop.org/libmbim/libmbim
-PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=47cf7e1aebb3d0ccd95c0e88a30df68bf6dfc0f4
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
+PKG_SOURCE_URL:=https://www.freedesktop.org/software/libmbim
+PKG_HASH=2cf7c6c7aa9e962a589f61bff2766035b61792ef961131a21fcbbe043f91a866
 
 PKG_MAINTAINER:=Nicholas Smith <nicholas.smith@telcoantennas.com.au>
 PKG_LICENSE:=GPL-2.0-or-later
