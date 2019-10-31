@@ -77,7 +77,8 @@ case "$FIRMWARE" in
 	qxwlan,e2600ac-c1 |\
 	qxwlan,e2600ac-c2 |\
 	unielec,u4019-32m) |\
-	telco,x1-pro)
+	telco,x1-pro) |\
+	telco,x1pro)
 		caldata_extract "0:ART" 0x1000 0x2f20
 		;;
 	engenius,ens620ext)
@@ -141,7 +142,8 @@ case "$FIRMWARE" in
 	qxwlan,e2600ac-c1 |\
 	qxwlan,e2600ac-c2 |\
 	unielec,u4019-32m) |\
-	telco,x1-pro)
+	telco,x1-pro) |\
+	telco,x1pro)
 		caldata_extract "0:ART" 0x5000 0x2f20
 		;;
 	engenius,ens620ext)
