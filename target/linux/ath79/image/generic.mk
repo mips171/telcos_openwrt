@@ -931,7 +931,6 @@ define Device/rosinson_wr818
 endef
 TARGET_DEVICES += rosinson_wr818
 
-<<<<<<< HEAD
 define Device/sitecom_wlr-7100
   ATH_SOC := ar1022
   DEVICE_VENDOR := Sitecom
@@ -945,7 +944,7 @@ define Device/sitecom_wlr-7100
   IMAGE_SIZE := 7488k
 endef
 TARGET_DEVICES += sitecom_wlr-7100
-=======
+
 define Device/telco_electronics_tel-t1
   ATH_SOC := qca9531
   DEVICE_TITLE := Telco Electronics T1
@@ -955,7 +954,6 @@ define Device/telco_electronics_tel-t1
   SUPPORTED_DEVICES += tel-t1 tel_t1 telco_electronics_tel-t1 telco_electronics,tel-t1 telco,electronics,tel-t1
 endef
 TARGET_DEVICES += telco_electronics_tel-t1
->>>>>>> ath79: add support for Telco Electronics T1
 
 define Device/telco_electronics_tel-t2
   ATH_SOC := qca9531
