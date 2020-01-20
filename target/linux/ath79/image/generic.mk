@@ -931,20 +931,6 @@ define Device/rosinson_wr818
 endef
 TARGET_DEVICES += rosinson_wr818
 
-define Device/sitecom_wlr-7100
-  ATH_SOC := ar1022
-  DEVICE_VENDOR := Sitecom
-  DEVICE_MODEL := WLR-7100
-  DEVICE_VARIANT := v1 002
-  DEVICE_PACKAGES := ath10k-firmware-qca988x kmod-ath10k kmod-usb2
-  IMAGES += factory.dlf
-  IMAGE/factory.dlf := append-kernel | pad-to $$$$(BLOCKSIZE) | \
-	append-rootfs | pad-rootfs | check-size $$$$(IMAGE_SIZE) | \
-	senao-header -r 0x222 -p 0x53 -t 2
-  IMAGE_SIZE := 7488k
-endef
-TARGET_DEVICES += sitecom_wlr-7100
-
 define Device/telco_electronics_tel-t1
   ATH_SOC := qca9531
   DEVICE_TITLE := Telco Electronics T1
@@ -954,16 +940,6 @@ define Device/telco_electronics_tel-t1
   SUPPORTED_DEVICES += tel-t1 tel_t1 telco_electronics_tel-t1 telco_electronics,tel-t1 telco,electronics,tel-t1
 endef
 TARGET_DEVICES += telco_electronics_tel-t1
-
-define Device/telco_electronics_tel-t2
-  ATH_SOC := qca9531
-  DEVICE_TITLE := Telco Electronics T2
-  DEVICE_PACKAGES := rssileds kmod-leds-gpio kmod-usb-core kmod-usb2 kmod-usb-net \
-	modemmanager -swconfig -uboot-envtools
-  IMAGE_SIZE := 16192k
-  SUPPORTED_DEVICES += tel-t2 tel_t2 telco_electronics_tel-t2 telco_electronics,tel-t2 telco,electronics,tel-t2
-endef
-TARGET_DEVICES += telco_electronics_tel-t2
 
 define Device/telco_electronics_tel-b5
   ATH_SOC := qca9533
