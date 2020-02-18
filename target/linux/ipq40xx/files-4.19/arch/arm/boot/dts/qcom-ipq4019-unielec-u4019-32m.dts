@@ -7,7 +7,7 @@
 #include <dt-bindings/input/input.h>
 
 / {
-	model = "Unielec U4019 (32M)";
+	model = "Telco Electronics X1 Pro";
 	compatible = "unielec,u4019-32m","unielec,u4019","qcom,ipq4019";
 };
 
