@@ -440,7 +440,7 @@ define Device/unielec_u4019-32m
 	IMAGES := sysupgrade.bin
 	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
 endef
-TARGET_DEVICES += unielec_u4019-32m
+TARGET_DEVICES += unielec_u4019-32m tel_x1_pro
 
 define Device/zyxel_nbg6617
 	$(call Device/FitImageLzma)
